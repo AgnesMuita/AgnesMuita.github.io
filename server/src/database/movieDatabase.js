@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db =("mongodb+srv://wammy:hcBgBmoes26qY4zd@clustermovies.elqqa.mongodb.net/?retryWrites=true&w=majority");
+const db =("mongodb+srv://<username>:<password>@clustermovies.elqqa.mongodb.net/?retryWrites=true&w=majority");
 
 
 const connectDB = async()=>{
