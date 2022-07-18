@@ -16,7 +16,7 @@ function Search() {
     const newFilter = oneMovie.filter((value)=>{
         return value.name.toLowerCase().includes(searchWord);
     })
-    if(searchWord == ""){
+    if(searchWord === ""){
       setFilteredData([])
    }else{
     setFilteredData(newFilter)   
@@ -42,7 +42,7 @@ function Search() {
         className='flex slide-up-fade-in justify-content-between'
         style={{borderBottom: '2px solid var(--primary-color)'}}
       >
-        {filteredData.length != 0 ? (
+        {filteredData.length !== 0 ? (
         <div>
           {filteredData.slice(0,3).map((element, i)=>{
           return <div key={i}>

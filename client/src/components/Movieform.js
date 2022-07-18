@@ -16,7 +16,7 @@ const Movieform=()=>{
         setMovieInfo(res.data)
         alert("Your movie has been created successfully")
         window.location.reload()
-      })
+      })  
       .catch(err=>{
         console.log(err)
       })
